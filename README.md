@@ -116,7 +116,7 @@ good to go!
 Now that our credentials.yml is setup we can now set the pipelines
 
 ```
-fly -t tutorial sp -c scotts-pipeline.yml -p hello-world -l credentials.yml
+fly -t tutorial sp -c pipeline.yml -p hello-world -l credentials.yml
 fly -t tutorial up -p hello-world
 ```
 
