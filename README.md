@@ -16,17 +16,17 @@ You can clone this repo to get this running asap.
 - [Pivotal](https://account.run.pivotal.io/z/uaa/sign-up) account.
 - [Docker](https://www.docker.com/products/docker-engine) installed.
 - [Docker-compose](https://docs.docker.com/compose/install/#install-compose) installed.
-- [fly CLI](https://concourse-ci.org/download.html) installed.
-    Once downloaded you need to add it to your path:
-    
-      ```
-      sudo mkdir -p /usr/local/bin
-      
-      sudo mv ~/Downloads/fly /usr/local/bin
-      
-      sudo chmod 0755 /usr/local/bin/fly
+- [fly CLI](https://concourse-ci.org/download.html) installed. 
+Once downloaded you need to add it to your path:
 
-      ```
+```
+sudo mkdir -p /usr/local/bin
+      
+sudo mv ~/Downloads/fly /usr/local/bin
+      
+sudo chmod 0755 /usr/local/bin/fly
+
+```
 
 #### Installing
 
