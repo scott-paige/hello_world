@@ -41,7 +41,7 @@ fly --target tutorial sync
 ```
 
 Great! Now we are logged into concourse, and now we need to build our pipeline. I created
-my pipeline to be triggered by my repo, and then build my app and finally cf push.
+my pipeline to be triggered by my repo, and then the pipeline builds my app and finally it finishes with a cf push.
 
 So now we need to build our pipeline.yml.
 
@@ -91,8 +91,7 @@ jobs:
       buildpack: ((cf_buildpack))
 ```
 Ok now that our pipeline.yml is built we close to setting it up, but we first need
-to build out our credentials.yml. This way we can feed in the env variables that we need from the
-command line. You can do this a few different ways. Check out Stark and Wayne's [tutorial](https://concoursetutorial.com/).
+to build out our credentials.yml. This way we can feed in the env variables that we need from the command line. You can do this a few different ways, check out Stark and Wayne's [tutorial](https://concoursetutorial.com/).
 
 Our credentials.yml should look like this:
 
@@ -111,8 +110,7 @@ my_github_repo: <your github repo uri>
 To get your cf variables you will need to go to your [pcf console](https://console.run.pivotal.io/).
 
 You will see Orgs and if you have one created you can click into your Org name to
-see the spaces available. Plug those in to the credentials.yml and we should be
-good to go!
+see the spaces available. If not create an Org real quick and then plug the org & space name into the credentials.yml and we should be good to go!
 
 Now that our credentials.yml is setup we can now set the pipelines
 
