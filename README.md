@@ -1,7 +1,7 @@
 # How to Deploy a Hello World App using Concourse and PCF
 
 This is a simple project to show how to use Concourse and PCF to deploy a Hello World application.
-I used the simple Flask app hello world for this, however you can use any language to do this.
+I made a simple Flask app that returns hello world for this, however you can use any language to do this.
 You can learn more from [Cloud Foundy](https://www.cloudfoundry.org/). They have examples for a simple
 CF push.
 
