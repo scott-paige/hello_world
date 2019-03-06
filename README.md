@@ -91,7 +91,7 @@ jobs:
 ```
 Ok now that our pipeline.yml is built we close to setting it up, but we first need
 to build out our credentials.yml. This way we can feed in the env variables that we need from the
-command line. You can do this a few different ways. Check out Stark and Wayne's [turtorial](https://concoursetutorial.com/).
+command line. You can do this a few different ways. Check out Stark and Wayne's [tutorial](https://concoursetutorial.com/).
 
 Our credentials.yml should look like this:
 
