@@ -11,6 +11,14 @@ CF push.
 
 You can clone this repo to get this running asap.
 
+[Prerequisites](https://github.com/scott-paige/hello_world#prerequisites)
+[Setup]()
+- [Concourse]()
+- [Pipeline]()
+- [Credentials]()
+- [Set Pipeline]()
+- [Hello World]()
+
 ### Prerequisites
 
 - [Pivotal](https://account.run.pivotal.io/z/uaa/sign-up) account.
@@ -25,7 +33,9 @@ sudo mv ~/Downloads/fly /usr/local/bin
 sudo chmod 0755 /usr/local/bin/fly
 ```
 
-#### Installing
+#### Setup
+
+##### Concourse
 
 First we want to get our concourse env up and running.
 
@@ -43,7 +53,7 @@ fly --target tutorial sync
 Great! Now we are logged into concourse, and now we need to build our pipeline. I created
 my pipeline to be triggered by my repo, and then the pipeline builds my app and finally it finishes with a cf push.
 
-
+##### Pipeline
 
 So now we need to build our pipeline.yml.
 
@@ -95,6 +105,8 @@ jobs:
 Ok now that our pipeline.yml is built we close to setting it up, but we first need
 to build out our credentials.yml. This way we can feed in the env variables that we need from the command line. You can do this a few different ways, check out Stark and Wayne's [tutorial](https://concoursetutorial.com/).
 
+##### Credentials
+
 Our credentials.yml should look like this:
 
 ```
@@ -116,10 +128,14 @@ see the spaces available. If not create an Org real quick and then plug the org 
 
 Now that our credentials.yml is setup we can now set the pipelines
 
+##### Set Pipeline
+
 ```
 fly -t tutorial sp -c pipeline.yml -p hello-world -l credentials.yml
 fly -t tutorial up -p hello-world
 ```
+
+##### Hello World
 
 So if we navigate back to our dashboard ui http://127.0.0.1:8080/
 
