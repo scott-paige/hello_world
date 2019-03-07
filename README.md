@@ -1,4 +1,4 @@
-# How to Deploy a Hello World App using Concourse and PCF
+# Deploying an app to PCF using Concourse
 
 This is a simple project to show how to use Concourse and PCF to deploy a Hello World application.
 I made a simple Flask app that returns hello world for this, however you can use any language to do this.
@@ -42,6 +42,8 @@ fly --target tutorial sync
 
 Great! Now we are logged into concourse, and now we need to build our pipeline. I created
 my pipeline to be triggered by my repo, and then the pipeline builds my app and finally it finishes with a cf push.
+
+
 
 So now we need to build our pipeline.yml.
 
