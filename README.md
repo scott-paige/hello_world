@@ -12,12 +12,12 @@ CF push.
 You can clone this repo to get this running asap.
 
 [Prerequisites](https://github.com/scott-paige/hello_world#prerequisites)
-[Setup]()
-- [Concourse]()
-- [Pipeline]()
-- [Credentials]()
-- [Set Pipeline]()
-- [Hello World]()
+[Setup](https://github.com/scott-paige/hello_world#setup)
+- [Concourse](https://github.com/scott-paige/hello_world#concourse)
+- [Pipeline](https://github.com/scott-paige/hello_world#pipeline)
+- [Credentials](https://github.com/scott-paige/hello_world#credentials)
+- [Set Pipeline](https://github.com/scott-paige/hello_world#set-pipeline)
+- [Hello World](https://github.com/scott-paige/hello_world#hello-world)
 
 ### Prerequisites
 
